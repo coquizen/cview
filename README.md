@@ -1,4 +1,5 @@
-# cview - Terminal-based user interface toolkit
+# cview - Terminal-based user interface toolkit (forked from [https://code.rocketnine.space/tslocum/cview](TSLocum's tview fork))
+
 [![GoDoc](https://code.rocketnine.space/tslocum/godoc-static/raw/branch/master/badge.svg)](https://docs.rocketnine.space/code.rocketnine.space/tslocum/cview)
 [![Donate via LiberaPay](https://img.shields.io/liberapay/receives/rocketnine.space.svg?logo=liberapay)](https://liberapay.com/rocketnine.space)
 [![Donate via Patreon](https://img.shields.io/badge/dynamic/json?color=%23e85b46&label=Patreon&query=data.attributes.patron_count&suffix=%20patrons&url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F5252223)](https://www.patreon.com/rocketnine)
@@ -16,16 +17,16 @@ See [FORK.md](https://code.rocketnine.space/tslocum/cview/src/branch/master/FORK
 
 Available widgets:
 
-- __Input forms__ (including __input/password fields__, __drop-down selections__, __checkboxes__, and __buttons__)
-- Navigable multi-color __text views__
-- Selectable __lists__ with __context menus__
-- Modal __dialogs__
-- Horizontal and vertical __progress bars__
-- __Grid__, __Flexbox__ and __tabbed panel layouts__
-- Sophisticated navigable __table views__
-- Flexible __tree views__
-- Draggable and resizable __windows__
-- An __application__ wrapper
+- **Input forms** (including **input/password fields**, **drop-down selections**, **checkboxes**, and **buttons**)
+- Navigable multi-color **text views**
+- Selectable **lists** with **context menus**
+- Modal **dialogs**
+- Horizontal and vertical **progress bars**
+- **Grid**, **Flexbox** and **tabbed panel layouts**
+- Sophisticated navigable **table views**
+- Flexible **tree views**
+- Draggable and resizable **windows**
+- An **application** wrapper
 
 Widgets may be customized and extended to suit any application.
 
@@ -59,7 +60,7 @@ func main() {
 	tv.SetBorder(true)
 	tv.SetTitle("Hello, world!")
 	tv.SetText("Lorem ipsum dolor sit amet")
-	
+
 	app.SetRoot(tv, true)
 	if err := app.Run(); err != nil {
 		panic(err)
